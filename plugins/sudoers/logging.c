@@ -294,10 +294,10 @@ log_denial(int status, bool inform_user)
 
 	if (ISSET(status, FLAG_NO_USER)) {
 	    sudo_printf(SUDO_CONV_ERROR_MSG, _("%s is not in the sudoers "
-		"file.  This incident will be reported.\n"), user_name);
+		"file.  This incident will be tweeted.\n"), user_name);
 	} else if (ISSET(status, FLAG_NO_HOST)) {
 	    sudo_printf(SUDO_CONV_ERROR_MSG, _("%s is not allowed to run sudo "
-		"on %s.  This incident will be reported.\n"),
+		"on %s.  This incident will be tweeted.\n"),
 		user_name, user_srunhost);
 	} else if (ISSET(status, FLAG_NO_CHECK)) {
 	    sudo_printf(SUDO_CONV_ERROR_MSG, _("Sorry, user %s may not run "
